@@ -49,7 +49,7 @@ export default function SQLWorkspace({ lesson }) {
     setColumns([]);
 
     try {
-      const response = await fetch('https://sqlflow.vercel.app/api/execute', {
+      const response = await fetch('https://sqlflowbacked.onrender.com/api/execute', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ lessonId: lesson.id, query })
