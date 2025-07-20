@@ -14,7 +14,7 @@ export default function ChallengeStep({ step, onCompleted, completed }) {
   const validateStep = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://sqlflow.vercel.app/api/validate', {
+      const response = await fetch('https://sqlflowbacked.onrender.com/api/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
