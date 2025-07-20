@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://sqlflow.vercel.app/api';
 
 // --- Helper: Unified response handler ---
 const handleResponse = async (response) => {
