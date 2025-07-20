@@ -44,7 +44,7 @@ export default function PracticeExercise({ exercise, lessonId, onCompleted, comp
     setLoading(true);
     setResult(null);
     try {
-      const response = await fetch('https://sqlflow.vercel.app/api/validate', {
+      const response = await fetch('https://sqlflowbacked.onrender.com/api/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ lessonId, exerciseId: exercise.id, query: input })
