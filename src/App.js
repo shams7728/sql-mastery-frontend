@@ -42,7 +42,7 @@ export default function App() {
     if (isAuthenticated) {
       const fetchLessons = async () => {
         try {
-          const response = await fetch('https://sqlflowbacked.onrender.com/api/lessons');
+          const response = await fetch('https://sqlflowbacked.onrender.com/api/');
           const data = await response.json();
           setLessons(data);
         } catch (error) {
